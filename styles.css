@@ -101,8 +101,12 @@ a {
     justify-content: center;
     gap: var(--space-xs);
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
+}
+
+.urgency-banner strong {
+    font-weight: 700;
 }
 
 .pulse-dot {
@@ -141,6 +145,11 @@ a {
     display: flex;
     align-items: center;
     gap: var(--space-sm);
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .logo-mark {
@@ -727,6 +736,10 @@ a {
     margin-bottom: var(--space-md);
 }
 
+.footer-brand .logo-img {
+    height: 36px;
+}
+
 .footer-description {
     color: var(--color-text-muted);
     font-size: 0.95rem;
@@ -817,13 +830,48 @@ a {
     padding: var(--space-md);
 }
 
+.btn-mobile-icon {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.btn-icon-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    animation: ring 2s ease-in-out infinite;
+}
+
+.btn-text-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.btn-text-mobile .btn-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+.btn-text-mobile .btn-label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
 @media (max-width: 767px) {
     .sticky-cta {
         display: block;
     }
     
     body {
-        padding-bottom: 90px;
+        padding-bottom: 100px;
     }
     
     .header-cta-text {
